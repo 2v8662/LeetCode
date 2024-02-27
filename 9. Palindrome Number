@@ -1,0 +1,10 @@
+var isPalindrome = function (x) {
+    if (x < 0) {
+        return false;
+    } else if ( x===0 ) {
+        return true;
+    }
+
+    let strX = String(x);
+    return strX === strX.split('').reverse().join('');
+};
