@@ -1,0 +1,9 @@
+var isValid = function (s) {
+    let i;
+    do {
+        i = s.length;
+        s = s.replace('{}', '').replace('[]', '').replace('()', '');
+    } while (i !== s.length);
+
+    return i == 0;
+};
